@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Todos JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/jquery-3.3.1.min.js"></script>
+</head>
+
+<body>
+    <div class="container-fluid todo-container">
+        <div class="row">
+            <div class="col-xs-offset-1 col-xs-10 col-sm-offset-3 col-sm-6 col-md-offset-4 col-md-4">
+                <div id="todosWrapper">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script id="todosTemplate" type="text/template">
+        <h3 class="text-center">{{title}}</h3>
+        <form name="todosForm" novalidate onsubmit="todosObj.handleAddTodos(); return false;">
+            <div class="input-group">
+                <input type="text" class="form-control todo-textbox" placeholder="Type something">
+                <span class="input-group-btn">
+                    <button class="btn btn-default" type="submit">Add</button>
+                </span>
+            </div> <!-- /input-group -->
+        </form>
+        <div class="actions-wrapper">
+            <button type="button" class="btn btn-default" onclick="todosObj.handleToggleAllTodoChecked()">Check
+                all</button>
+            <button type="button" class="btn btn-primary" onclick="todosObj.handleMarkAsCompleted()">Mark
+                as Completed</button>
+            <button type="button" class="btn btn-danger" onclick="todosObj.handleDeleteSelected()">Remove
+                Selected</button>
+        </div>
+        <div class="todos-list-wrapper">
+            <ul id="todosList" class="list-unstyled todos-list">
+                <!-- <li class="">
+                    <label>
+                        <input type="checkbox" />
+                        <span class="todo-content">Apple</span>
+                    </label>
+                    <span class="glyphicon glyphicon-trash delete-todo"></span>
+                </li> -->
+            </ul>
+        </div>
+    </script>
+    <script src="js/todos.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

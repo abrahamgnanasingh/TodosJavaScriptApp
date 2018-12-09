@@ -1,0 +1,44 @@
+.todo-container {
+    margin-top: 50px;
+}
+
+/* .todo {
+    max-width: 240px;
+    display: inline-block;
+} */
+
+.actions-wrapper {
+    margin-top: 10px;
+}
+
+.todos-list-wrapper {
+    margin-top: 10px;
+}
+
+.todos-list > li {
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.todos-list > li:not(.no-todos):hover {
+    background-color: #dedede;
+}
+
+.todos-list > li.completed > label {
+    text-decoration: line-through;
+}
+
+.todos-list > li.no-todos {
+    font-style: italic;
+}
+
+.todo-content {
+    padding-left: 10px;
+    font-weight: normal;
+}
+
+.delete-todo {
+    cursor: pointer;
+    float: right;
+    clear: both;
+}
