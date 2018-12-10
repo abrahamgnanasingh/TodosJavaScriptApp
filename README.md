@@ -1,2 +1,2 @@
 # TodosJavaScriptApp
-A simple todos app using JavaScript
+A simple todos app developed using JavaScript
