@@ -19,8 +19,14 @@ Todos.prototype.init = function() {
     var $template = $("#todosTemplate");
     // Get the contents of the template
     var templateHtml = $template.html();
-    // var cth = templateHtml;
-    var cth = templateHtml.replace(/{{title}}/g, "Todos");
+    var cth = templateHtml;
+    // var cth = templateHtml.replace(/{{title}}/g, "Todos");
+
+    debugger;
+    // for(var i = 0; i < actions.length; i++) {
+
+    // }
+    // var cth = templateHtml.replace(/{{action 'handleToggleAllTodoChecked'}}/g, "this.handleToggleAllTodoChecked()");
     this.$todosComponent.html(cth);
 }
 

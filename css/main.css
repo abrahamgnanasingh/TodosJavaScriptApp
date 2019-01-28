@@ -21,7 +21,7 @@
 }
 
 .todos-list > li:not(.no-todos):hover {
-    background-color: #dedede;
+    /* background-color: #dedede; */
 }
 
 .todos-list > li.completed > label {

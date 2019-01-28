@@ -1,0 +1,10 @@
+{
+    "name": "todos-javascript-app",
+    "version": "1.0.0",
+    "scripts": {
+        "build": "handlebars handlebars-templates/*.handlebars -f ../js"
+    },
+    "dependencies": {
+        "handlebars": "^4.0.12"
+    }
+}
